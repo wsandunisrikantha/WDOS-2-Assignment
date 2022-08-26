@@ -1,0 +1,316 @@
+/*Navigation bar*/
+.logo img{
+    height: 55px;
+}
+
+.NavBar {
+    background-color:white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    height: 65px; 
+    display:flex;
+    box-shadow: 0 0 40px 0 maroon;
+}
+
+.NavBar ul {
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.NavBar li {
+    display:inline-block;
+    /*align-items:center;*/
+    margin: 20px;
+    margin-right: 20px;
+}
+
+.NavBar li a {
+    color:black;
+    text-decoration: none;
+    font-family:inherit;
+    font-size: large;
+}
+
+.NavBar li a:hover {
+    text-decoration: underline maroon 25%;
+    color:black;
+}
+
+/*margin for body at the top*/
+body {
+    margin: top 80px;
+}
+
+#Introduction { width:800px; margin: 0 auto; }
+
+.sectionPD {
+    position: relative;
+    width: 400px;
+}
+  
+.PDImg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+.PDPara {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+  
+.sectionPD:hover .PDPara {
+    opacity: 1;
+}
+  
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+/*form*/
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=number], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+  
+input[type=submit] {
+    background-color:black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+  
+input[type=button]:hover {
+    background-color: maroon;
+}
+  
+.containerform {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+  
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+  
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+  
+/* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=button] {
+      width: 100%;
+      margin-top: 0;
+    }
+}
+
+
+
+
+/*product card*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+  
+.price {
+    color: grey;
+   font-size: 22px;
+   text-align: center;
+}
+  
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: maroon;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+  
+.card button:hover {
+    opacity: 0.7;
+}
+
+h1{
+    text-align: center;
+}
+
+/*.row {
+    display:flex;
+}
+
+.column {
+    flex:33.33%;
+    padding:5px;
+}
+
+/* Float four columns side by side */
+.column1 {
+    float: left;
+    width: 33.33%;
+    padding: 0 10px;
+}
+  
+/* Remove extra left and right margins, due to padding */
+.row1 {margin: 0 -5px;}
+  
+/* Clear floats after the columns */
+.row1:after {
+content: "";
+display: table;
+clear: both;
+}
+  
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column1 {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+}
+  
+/* Style the counter cards */
+
+/* Float four columns side by side */
+.column2 {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
+  
+/* Remove extra left and right margins, due to padding */
+.row2 {margin: 0 -5px;}
+  
+/* Clear floats after the columns */
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column2 {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+}
+  
+/* Style the counter cards */
+.card2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+  
+
+#Introduction {
+    padding:50px;
+}
+
+#MainForm {
+    padding: 100px;
+}
+
+#Information h2 {
+    color:maroon;
+    text-align: center;
+}
+
+@media screen and (max-width:1000px) {
+    #Information {
+        border-radius:10px;
+        min-width:260px;
+        max-width:1200px;
+        width:90%;
+        font-size:35px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    #Information {
+        border-radius:10px;
+        min-width:260px;
+        max-width:1200px;
+        width:90%;
+        font-size:35px;
+    }
+    #Introduction{
+        font-size:35px;
+    }
+}
+
+@media screen and (max-width:1200px){
+    #Introduction{
+        font-size:35px;
+    }
+}
+

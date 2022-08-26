@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Linking css style sheet-->
+        <link rel="stylesheet" href="purchase_and_donate.css">
+        <link rel="stylesheet" href="styling.css">
+        <link rel="styleheet" href="pd2.css">
+        <!--U from Universal Character Set + Transformation Format—8-bit-->
+        <meta charset="UFT-8">
+        <!--meta description: seen underneath a site's title in organic serach results-->
+        <meta name="description" content="Look no further! This little island nation, has a lot of offer to a passionate traveler.">
+        <!--This gives the browser instructions on how to control the page's dimensions and scaling.-->
+        <meta name="viewport" content="device-width", initial-scale="1">
+        <!--shown in the browser's title bar or in the page's tab-->
+        <title>CCeylon-Sri Lanka</title>
+    </head>
+    <body>
+        <div id="ContainerP&D">
+            <!--NAVBAR-->
+            <header>
+                <nav class="NavBar">
+                    <!--LOGO-->
+                    <div class="logo">
+                        <img src="Images/Nav_Bar.png">
+                    </div>
+                    <!--class assigned for elements individually-->
+                    <ul class="NavElements">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="beaches.html">BEACHES</a></li>
+                        <li><a href="wildlife.html">WILDLIFE</a></li>
+                        <li><a href="activities.html">ACTIVITIES</a></li>
+                        <li><a href="purchase_and_donate.html">PURCHASE & DONATE</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!--Main Image-->
+            <img src="images/P&DMainFinal.jpg" width="100%">
+            <main id="Content">
+                <!--Introduction-->
+                <div id="Introduction">
+                    <h1>Take A Look Around!</h1>
+                    <p>Now that the tour has ended. Please spare a while to check out how you can get us a step closer to our vision which is: a world where both people and elephants flourish together.</p>
+                    <hr>
+                </div>
+                <!--div for two Images+Text and Form-->
+                <div id="Information">
+                    <!--Help Elephants-->
+                    <div class="row2">
+                        <div class="column2">
+                            <div class="card2">
+                                <h2>Let's Address the Elephant in the Room</h2>
+                                <p>Asian elephants are huge draw for tourists visiting Asia each year. Some experiences allow people to see animals in the wild, while others take place in more controlled settings with captive elephants.  Done responsibly, tourism brings tremendous benefits for people and wildlife. Done poorly, it can threaten the very species we love.</p>
+                            </div>
+                        </div>
+                        <div class="column2">
+                            <div class="card2">
+                                <h2>Conservation means taking care of people too</h2>
+                                <p>An unprecedented economic crisis in Sri Lanka has led to fuel shortages and skyrocketing inflation. Rural households are struggling. We're providing relief supplies to families that are living below the poverty line.</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <!----------------------------------------------DONATION FORM------------------------------------------------------------------------------------------->
+                    <div class="containerform">
+                        <form action="" class="contact-col" id="formDonation"> <!----0-->
+                          <div class="row">
+                            <div class="col-25">
+                              <label for="nameinput">Name</label>
+                            </div>
+                            <div class="col-75">
+                              <input type="text" id="name" name="username" placeholder="Enter your name" required>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-25">
+                              <label for="email">Email</label>
+                            </div>
+                            <div class="col-75">
+                              <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-25">
+                              <label for="Address">Address</label>
+                            </div>
+                            <div class="col-75">
+                                <textarea  rows="3" id="address" placeholder="Enter your address" required ></textarea>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-25">
+                                <!--insert-->
+                            </div>
+                            <div class="col-75">
+                                <label for="Donations" id="fixedDonationValues" class="lbdate">Select fixed Donation values from the list</label> <!---0-->
+                                <select name="language" class="custom-select" id="fixedDonations" > <!--o-->
+                                    <option value="100">LKR 100 </option>
+                                    <option value="500">LKR 500 </option>
+                                    <option value="1000">LKR 1000 </option>
+                                    <option value="2500">LKR 2500 </option>
+                                    <option value="5000">LKR 5000 </option>
+                                    
+                                  </select>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-25">
+                                <label for="donationComment">Donation comment</label>
+                            </div>
+                            <div class="col-75">
+                                <textarea  rows="3" id="donationComment" placeholder="Enter Donation Comment"></textarea>
+                            </div>
+                          </div>
+                          
+                        </form>
+
+                        <form class="paymentDetails" action=""  method="post">
+                            <div class="row">
+                                <div class="col-25">
+                                    <span>Card number</span>
+                                    <label for="cardNum"></label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="cardNum" maxlength="16" class="card-number-input">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-25">
+                                    <span>Card holder</span>
+                                    <label for="cardholder"></label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="cardHolder" class="card-holder-input">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-25">
+                                    <span>expiration mm</span>                                   
+                                </div>
+                                <div class="col-75">
+                                    <select name="" id="monthInput" class="month-input">
+                                        <option value="month" selected disabled>Month</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-25">
+                                    <span>expiration yy</span>
+                                </div>
+                                <div class="col-75">
+                                    <select name="" id="yearInput" class="year-input" onselect="inputValidatiom()">
+                                        <option value="year" selected disabled>Year</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>  
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                        <option value="2027">2027</option>
+                                        <option value="2028">2028</option>
+                                        <option value="2029">2029</option>
+                                        <option value="2030">2030</option>
+                                    </select>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-25">
+                                    <span>cvv</span>
+                                    <label for=""></label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="cvv" maxlength="3" class="cvv-input" >
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-75">
+                                    <input type="button" value="Donate" id="donateBtn" class="submit-btn" onclick="inputValidation();">
+                                </div>
+                                
+                              </div>
+                              
+                        </form>
+
+                    </div>
+                    
+                       
+                    <!--Local Merchandise-->
+                    <div id="merch">
+                        <h2 style="text-align:center">LOCAL MERCHANDISE</h2>
+                        <div class="row1">
+                            <div class="column1">
+                                <div class="card">
+                                    <img class="PDImg" src="images/P&D1.webp" alt="Denim Jeans" style="width:100%">
+                                    <h1 style="text-align:center">ITEM</h1>
+                                    <p class="price">LKR xxx</p>
+                                    <p></p>
+                                    <p><button>BUY</button></p>
+                                </div>
+                            </div>
+                            <div class="column1">
+                                <div class="card">
+                                    <img class="PDImg" src="images/P&D2.jpg" alt="Denim Jeans" style="width:100%">
+                                    <h1 style="text-align:center">ITEM</h1>
+                                    <p class="price">LKR xxx</p>
+                                    <p></p>
+                                    <p><button>BUY</button></p>
+                                </div>
+                            </div>
+                            <div class="column1">
+                                <div class="card">
+                                    <img class="PDImg" src="images/P&D3.jpg" alt="Denim Jeans" style="width:100%">
+                                    <h1 style="text-align:center">ITEM</h1>
+                                    <p class="price">LKR xxx</p>
+                                    <p></p>
+                                    <p><button>BUY</button></p>
+                                </div>
+                            </div>
+                        </div>              
+                    </div>      
+                </div>   
+            </main>
+        </div>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Privacy and Terms</li>
+                    <li><a href="#">User Agreement</li>
+                </ul>
+            </nav>
+            <!--REFERENCES BELOW-->
+            <!--IMAGE URLS-->
+            <!--<https://www.google.com/imgres?imgurl=https://blog.srilanka-villa.com/wp-content/uploads/2016/01/art-2756_640.jpg&imgrefurl=https://blog.srilanka-villa.com/2016/01/10-ideal-souvenirs-from-sri-lanka&h=426&w=640&tbnid=YRXFS3OC4LA2bM&tbnh=183&tbnw=275&usg=AI4_-kQ9qL-xf5qzI2CXvzN0e-rmJ-ynXA&vet=1&docid=62zXiV1xg7PjJM>-->
+            <!--<https://www.google.com/imgres?imgurl=https://assets.traveltriangle.com/blog/wp-content/uploads/2019/01/antiques.jpg&imgrefurl=https://traveltriangle.com/blog/shopping-in-sri-lanka/&h=400&w=700&tbnid=rXpCrJWV1matJM&tbnh=170&tbnw=297&usg=AI4_-kRcAADcas2Mteo9R0oFJ0w7Fx8vTA&vet=1&docid=GfFigGYqh3KbKM>-->
+            <!--<https://www.google.com/imgres?imgurl=https://theculturetrip.com/wp-content/uploads/2021/03/dy2d3g-e1617726258182.jpg&imgrefurl=https://theculturetrip.com/asia/sri-lanka/articles/10-traditional-souvenirs-to-buy-in-sri-lanka/&h=728&w=1092&tbnid=Ukkhp5FDl3B03M&tbnh=183&tbnw=275&usg=AI4_-kSf_YbvFAvTHS0rr0oPuT-Ia7TkWQ&vet=1&docid=YPrgWEYxAWDG8M>-->
+            <!--<https://www.google.com/imgres?imgurl=https://travelmelodies.com/wp-content/uploads/2017/11/travel-melodies-demon-masks-as-souvenirs-from-sri-lanka.jpg&imgrefurl=https://travelmelodies.com/souvenirs-sri-lanka/&h=600&w=900&tbnid=_nAG0DaICu7FxM&tbnh=183&tbnw=275&usg=AI4_-kSEYQqN0E_2skVDzCArgoWaBLEaqw&vet=1&docid=0M7IU3m5mSj5DM>-->
+        </footer>   
+        
+    </body>
+    <script src="donate.js"></script>
+
+</html>
+
+
+
+
+
+
+
+
+

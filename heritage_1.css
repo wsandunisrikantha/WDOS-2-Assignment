@@ -1,0 +1,156 @@
+/*Navigation bar*/
+.logo img{
+    height: 55px;
+}
+
+.NavBar {
+    background-color:white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    height: 65px; 
+    display:flex;
+    box-shadow: 0 0 5px 0 maroon;
+}
+
+.NavBar ul {
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.NavBar li {
+    display:inline-block;
+    /*align-items:center;*/
+    margin: 20px;
+    margin-right: 20px;
+}
+
+.NavBar li a {
+    color:black;
+    text-decoration: none;
+    font-family:inherit;
+    font-size: large;
+}
+
+.NavBar li a:hover {
+    text-decoration: underline maroon 25%;
+    color:black;
+}
+
+/*margin for body at the top*/
+body {
+    margin: top 80px;
+}
+
+.heading {
+    text-align: center;
+    padding:1cm;
+}
+
+
+
+.ImageGallery{
+    width: fit-content;
+    margin: 20px auto;
+    height: auto;
+}
+
+
+.Image {
+    width: calc(33% - 6px);
+    overflow:hidden;
+    height: fit-content;
+    margin:3px;
+    padding: 0;
+    display:block;
+    position:relative;
+    float:left;
+}
+
+img {
+    width: 100%;
+    transition-duration: .3s;
+    max-width: 100%;
+    display:block;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+.title {
+    position:absolute;
+    display:block;
+    cursor:pointer;
+    top: 35%;
+    display: none;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 1.6em;
+    text-shadow: 1px 5px 10px black;
+    transition-duration: .3s;
+}
+
+  
+.Image:hover img{
+    transform: scale(1.2);
+    transition-duration: .3s;
+    filter: grayscale(50%);
+    opacity: .7;
+}
+
+.Image:hover span{
+    color:white;
+    display: block;
+    transition-duration: .3s;
+}
+
+
+@media only screen and (max-width: 900px) {
+      .container {
+          width: calc(50% - 6px);
+      }
+}
+@media only screen and (max-width: 400px) {
+      .container {
+          width: 100%;
+      }
+}
+
+
+#ImageGallery {
+    padding-bottom: 450px;
+}
+
+#container {
+    width:1300px; margin: 0 auto;
+    padding:50px;
+}
+
+#container h2{
+    color:maroon;
+}
+
+@media screen and (max-width:1000px) {
+    #container {
+        border-radius:10px;
+        min-width:260px;
+        max-width:1200px;
+        width:90%;
+        font-size:16px;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    #container {
+        border-radius:10px;
+        min-width:260px;
+        max-width:1200px;
+        width:90%;
+        font-size:25px;
+    }
+}

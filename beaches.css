@@ -1,0 +1,240 @@
+
+/*To leave white space*/
+#Introduction { width: 974px; margin: 0 auto; }
+
+#ThreeSections {width:1300px; margin: 0 auto; }
+
+/*Navigation bar logo*/
+.logo img{
+    height: 55px;
+}
+
+/*Navigation bar properties*/
+.NavBar {
+    background-color:white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    height: 65px; 
+    display:flex;
+    box-shadow: 0 0 5px 0 maroon;
+}
+
+.NavBar ul {
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.NavBar li {
+    display:inline-block;
+    /*align-items:center;*/
+    margin: 20px;
+    margin-right: 20px;
+}
+
+/*NavBar items before cursor hovers over*/
+.NavBar li a {
+    color:black;
+    text-decoration: none;
+    font-family:inherit;
+    font-size: large;
+}
+
+/*NavBar items when cursor hovers over*/
+.NavBar li a:hover {
+    text-decoration: underline maroon 25%;
+    color:black;
+}
+
+/*margin for body at the top*/
+body {
+    margin: top 80px;;
+}
+
+/*body, html {
+    height: 100%;
+  }*/
+
+/*Hero Image fits screen*/
+#BeachMainImg image{
+    object-fit: cover;
+  }
+
+/*styling the Hotel links*/
+#ThreeSections a:link {
+    color:maroon;
+}
+
+/*#Beach2 {
+    padding:50px;
+    background-color: grey;
+}*/
+
+#Beach1 {
+    padding:100px;
+}
+
+#Beach2 {
+    padding:50px;
+}
+
+#Beach3 {
+    padding:120px;
+    padding-bottom: 250px;
+}
+
+.Bheading {
+    color:black;
+}
+
+.Bimage1 {
+    float:right;
+}
+
+.Bimage3 {
+    float:right;
+}
+
+.Bimage2 {
+    float:right;
+}
+
+#Introduction {
+    padding-top: 50px;
+}
+
+.Bheading {
+    color: maroon;
+}
+
+
+@media screen and (max-width:1000px) {
+    #ThreeSections {
+        border-radius:10px;
+        min-width:260px;
+        max-width:1200px;
+        width:90%;
+        font-size:16px;
+    }
+    .Bimage{
+        width:90%;
+        font-size:25px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    #ThreeSections {
+        border-radius:10px;
+        min-width:260px;
+        max-width:1200px;
+        width:90%;
+        font-size:25px;
+    }
+    .Bimage{
+        width:90%;
+        font-size:25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.navbar ul { 
+    list-style-type:none; 
+    padding: 0%; 
+    margin:0%; 
+    display:flex; 
+    background-color:white; 
+    flex-flow:row wrap; 
+    text-align: center; 
+} 
+
+    
+
+a:hover { 
+    text-decoration: underline; 
+    text-shadow: 5mm; 
+    text-decoration-color:darkmagenta;  
+} 
+
+ 
+
+.navbar li { 
+    flex-grow: 1; 
+    width: auto; 
+    border:.1em darkmagenta; 
+    display: inline; 
+} 
+
+ 
+
+
+#beach1 { 
+    background-color:white; 
+    height: auto; 
+    width: auto; 
+} 
+
+ 
+ 
+
+#beach2 { 
+    background-color:white; 
+    height: auto; 
+    width: auto; 
+} 
+
+ 
+ 
+
+#beach3 { 
+    background-color:white; 
+    height: auto; 
+    width: auto; 
+} 
+
+ 
+ 
+
+body { 
+    background-image: url("BeachMain_1(edited1)"); 
+} 
+
+ 
+ 
+
+@media  only screen and (min-width:400px) { 
+    body { 
+        background-image: () ; 
+    } 
+}*/
+
+     
+
+         
+
+     
+
+ 
